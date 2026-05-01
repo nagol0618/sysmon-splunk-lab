@@ -38,7 +38,7 @@ This lab demonstrates a functional threat detection pipeline built from scratch 
 - Network adapter set to **Host-Only** (isolated from internet)
 - Installed VirtualBox Guest Additions for display scaling and clipboard sharing
 
-![VirtualBox Network Settings](images/01-virtualbox-network-settings.png)
+![VirtualBox Network Settings](images/SplunkCONFIGWindowPwrShellSS2.PNG)
 
 ---
 
@@ -58,8 +58,8 @@ This lab demonstrates a functional threat detection pipeline built from scratch 
 Get-Service Sysmon64
 ```
 
-![Sysmon Installation](images/03-sysmon-install.png)
-![Sysmon Service Running](images/04-sysmon-service-running.png)
+![Sysmon Installation](images/SplunkIsRunningSS3.png)
+![Sysmon Service Running](images/SplunkIsUpSS5.png)
 
 ---
 
@@ -68,7 +68,7 @@ Confirmed Event ID 1 (Process Create), Event ID 13 (Registry), and Event ID 22 (
 
 `Applications and Services Logs → Microsoft → Windows → Sysmon → Operational`
 
-![Event Viewer Sysmon Logs](images/05-event-viewer-sysmon.png)
+![Event Viewer Sysmon Logs](images/SysmonEventVwrSS4.png)
 
 ---
 
@@ -83,7 +83,7 @@ sudo /opt/splunk/bin/splunk start --accept-license --run-as-root
 
 - Configured receiving port **9997** via Settings → Forwarding and Receiving
 
-![Splunk UI](images/06-splunk-ui.png)
+![Splunk UI](images/06-splunk-sysmon-events.png)
 
 ---
 
